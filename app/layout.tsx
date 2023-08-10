@@ -1,5 +1,5 @@
-import { ProviderWrapper } from "@/ProviderWrapper/ProviderWrapper.provider";
 import StyledComponentsRegistry from "@/lib/registry";
+import { ProviderWrapper } from "@/provider";
 import type { Metadata } from "next";
 import { Roboto_Mono } from "next/font/google";
 
