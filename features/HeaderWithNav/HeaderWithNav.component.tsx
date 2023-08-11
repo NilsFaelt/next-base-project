@@ -27,6 +27,7 @@ export const HeaderWithNav: FC<Props> = () => {
     <Container>
       <StyledLinkLogo style={{ width: "auto" }} href={"/"}>
         <LogoImage
+          priority
           src={"/heart.svg"}
           alt={"next logo"}
           width={15}

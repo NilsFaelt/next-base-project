@@ -1,2 +1,1 @@
-add tanstack base
-add all folders needed
+meta
