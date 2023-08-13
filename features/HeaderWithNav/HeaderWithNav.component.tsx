@@ -35,7 +35,7 @@ export const HeaderWithNav: FC<Props> = () => {
         />
       </StyledLinkLogo>
       <LinksContainer
-        menuanimationstate={
+        $menuanimationstate={
           toogleMenu === null ? "stale" : toogleMenu === true ? "open" : "close"
         }
       >

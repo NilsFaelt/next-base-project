@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 interface LinksContainerProps {
-  menuanimationstate: "open" | "close" | "stale";
+  $menuanimationstate: "open" | "close" | "stale";
 }
 
 const openMenuAnimation = keyframes`
@@ -71,8 +71,8 @@ export const LinksContainer = styled.nav<LinksContainerProps>`
     top: 5rem;
     left: 0;
     flex-direction: column;
-    animation: ${(props) => {
-        switch (props.menuanimationstate) {
+    animation: ${({ $menuanimationstate }) => {
+        switch ($menuanimationstate) {
           case "open":
             return openMenuAnimation;
           case "close":
