@@ -1,15 +1,11 @@
-import { HeaderWithNav } from "@/features";
-import type { Metadata } from "next";
+"use client";
+import { HomePageView } from "@/features";
+import { MainLayout } from "@/layout";
 
-export const metadata: Metadata = {
-  title: "BaseProject",
-  description: "BaseProject",
-};
 export default function Home() {
   return (
-    <main>
-      <HeaderWithNav />
-      <h1>test</h1>
-    </main>
+    <MainLayout>
+      <HomePageView />
+    </MainLayout>
   );
 }
