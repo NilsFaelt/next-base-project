@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const BarWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 0.2rem;
+  gap: 0.3rem;
   width: 1.8rem;
   height: auto;
   cursor: pointer;
@@ -12,9 +12,9 @@ export const BarWrapper = styled.div`
   }
 `;
 
-const BaseBar = styled.div`
-  background-color: black;
-  height: 0.3rem;
+const BaseBar = styled.div<{ $bgcolor: string }>`
+  background-color: ${(props) => props.$bgcolor};
+  height: 0.2rem;
   width: 100%;
   border-radius: 1rem;
 `;
